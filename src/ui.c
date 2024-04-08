@@ -8,6 +8,7 @@
 
 ///////////////////// VARIABLES ////////////////////
 
+<<<<<<< HEAD
 //Get start screen
 void ui_get_start_scr_init(void);
 lv_obj_t * get_start_scr;
@@ -32,6 +33,22 @@ lv_obj_t * ui_symbol_c;
 lv_obj_t * ui_symbol_c;
 lv_obj_t * ui____initial_actions0;
 void event_submit_btn(lv_event_t *e);
+=======
+
+// SCREEN: ui_Screen1
+void ui_Screen1_screen_init(void);
+lv_obj_t * ui_Screen1;
+lv_obj_t * ui_CardMini1;
+lv_obj_t * ui_Arc1;
+lv_obj_t * ui_Panel3;
+lv_obj_t * ui_Panel1;
+lv_obj_t * ui_Label1;
+lv_obj_t * ui_Chart1;
+lv_obj_t * ui_Label2;
+lv_obj_t * ui_Label3;
+lv_obj_t * ui_Label4;
+lv_obj_t * ui____initial_actions0;
+>>>>>>> de6793528c1a5617cd571390f88dff0579b7874f
 // lv_chart_series_t * ui_Chart1_series_1;
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
@@ -45,6 +62,7 @@ void event_submit_btn(lv_event_t *e);
 ///////////////////// ANIMATIONS ////////////////////
 
 ///////////////////// FUNCTIONS ////////////////////
+<<<<<<< HEAD
 void event_submit_btn(lv_event_t *e){
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t *target = lv_event_get_target(e);
@@ -52,13 +70,22 @@ void event_submit_btn(lv_event_t *e){
         lv_scr_load(ui_Screen);
     }
 }
+=======
+
+>>>>>>> de6793528c1a5617cd571390f88dff0579b7874f
 ///////////////////// SCREENS ////////////////////
 
 void ui_init(void)
 {
+<<<<<<< HEAD
     ui_Screen_init();
     // ui_get_start_scr_init();
     ui____initial_actions0 = lv_obj_create(NULL);
     // lv_disp_load_scr(get_start_scr);
      lv_disp_load_scr(ui_Screen);
+=======
+    ui_Screen1_screen_init();
+    ui____initial_actions0 = lv_obj_create(NULL);
+    lv_disp_load_scr(ui_Screen1);
+>>>>>>> de6793528c1a5617cd571390f88dff0579b7874f
 }

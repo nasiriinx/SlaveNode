@@ -15,6 +15,7 @@ extern "C" {
 #include "lv_i18n.h"
 #include "ui_helpers.h"
 #include "ui_events.h"
+<<<<<<< HEAD
 
 LV_FONT_DECLARE(ui_font_Digital16);
 LV_FONT_DECLARE(ui_font_digitfont42);
@@ -46,6 +47,22 @@ extern lv_obj_t * ui_symbol_c;
 extern lv_obj_t * ui_kb;
 extern lv_obj_t * ui____initial_actions0;
 // void event_submit_btn(lv_event_t *e);
+=======
+// SCREEN: ui_Screen1
+void ui_Screen1_screen_init(void);
+extern lv_obj_t * ui_Screen1;
+extern lv_obj_t * ui_CardMini1;
+extern lv_obj_t * ui_Arc1;
+extern lv_obj_t * ui_Panel3;
+extern lv_obj_t * ui_Panel1;
+extern lv_obj_t * ui_Label1;
+extern lv_obj_t * ui_Chart1;
+extern lv_obj_t * ui_Label2;
+extern lv_obj_t * ui_Label3;
+extern lv_obj_t * ui_Label4;
+extern lv_obj_t * ui____initial_actions0;
+// extern lv_chart_series_t * ui_Chart1_series_1;
+>>>>>>> de6793528c1a5617cd571390f88dff0579b7874f
 
 void ui_init(void);
 
