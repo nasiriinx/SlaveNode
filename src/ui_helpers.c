@@ -243,9 +243,9 @@ void _ui_checked_set_text_value(lv_obj_t * trg, lv_obj_t * src, const char * txt
 
 void _ui_spinbox_step(lv_obj_t * target, int val)
 {
-    if(val > 0) lv_spinbox_increment(target);
-    else lv_spinbox_decrement(target);
+    // if(val > 0) lv_spinbox_increment(target);
+    // else lv_spinbox_decrement(target);
 
-    lv_event_send(target, LV_EVENT_VALUE_CHANGED, 0);
+    // lv_event_send(target, LV_EVENT_VALUE_CHANGED, 0);
 }
 

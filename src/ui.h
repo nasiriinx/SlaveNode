@@ -15,20 +15,37 @@ extern "C" {
 #include "lv_i18n.h"
 #include "ui_helpers.h"
 #include "ui_events.h"
-// SCREEN: ui_Screen1
-void ui_Screen1_screen_init(void);
-extern lv_obj_t * ui_Screen1;
-extern lv_obj_t * ui_CardMini1;
-extern lv_obj_t * ui_Arc1;
-extern lv_obj_t * ui_Panel3;
+
+LV_FONT_DECLARE(ui_font_Digital16);
+LV_FONT_DECLARE(ui_font_digitfont42);
+LV_FONT_DECLARE(ui_font_Font16);
+LV_FONT_DECLARE(ui_font_Font32);
+LV_FONT_DECLARE(ui_font_Font72);
+LV_FONT_DECLARE(ui_font_Font108);
+LV_FONT_DECLARE(ui_font_Font118);
+
+void ui_get_start_scr_init(void);
+extern lv_obj_t * get_start_scr;
+extern lv_obj_t * get_start_text;
 extern lv_obj_t * ui_Panel1;
-extern lv_obj_t * ui_Label1;
+extern lv_obj_t * ssid_text;
+extern lv_obj_t * ssid_text_area;
+extern lv_obj_t * ui_Panel2;
+extern lv_obj_t * submit_btn_t;
+extern lv_obj_t * ui_submit_setting_btn;
+
+// SCREEN: ui_Screen1
+void ui_Screen_init(void);
+extern lv_obj_t * ui_Screen;
+extern lv_obj_t * ui_dev_name_t;
 extern lv_obj_t * ui_Chart1;
-extern lv_obj_t * ui_Label2;
-extern lv_obj_t * ui_Label3;
-extern lv_obj_t * ui_Label4;
+extern lv_obj_t * ui_temp_t;
+extern lv_obj_t * ui_c_text;
+extern lv_obj_t * ui_bar;
+extern lv_obj_t * ui_symbol_c;
+extern lv_obj_t * ui_kb;
 extern lv_obj_t * ui____initial_actions0;
-// extern lv_chart_series_t * ui_Chart1_series_1;
+// void event_submit_btn(lv_event_t *e);
 
 void ui_init(void);
 
